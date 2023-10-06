@@ -26,6 +26,17 @@ html {
   line-height: 1.4;
 }
 
+.wrapper {
+  padding: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header,
+footer {
+  text-align: center;
+}
+
 body {
   margin: 0;
 }
@@ -36,4 +47,148 @@ img {
 }
 
 
+/*navigation & header for wide screens styles*/
+#header > div {
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.2rem solid rgb(245, 245, 245);
+}
 
+nav {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: var(--font-size-md);
+}
+
+nav ul {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+}
+  
+nav ul li {
+  padding-left: 1em;
+ }
+  
+nav ul li a:link,
+nav ul li a:visited {
+  text-decoration: none;
+  color: black;
+}
+  
+nav ul li a:hover,
+nav ul li a:focus {
+  color: red;
+}
+
+
+
+
+
+
+/*information about the company for wide screen - complete*/
+#about-us h2 {
+  text-align: center;
+}
+
+#about-us .paragraph-info {
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5em;
+}
+
+
+
+/*review section for wide screen - complete*/
+#reviews {
+  background-color: black;
+  color: white;
+}
+
+#reviews h2 {
+  text-align: center;
+}
+
+#reviews ol {
+  padding-left: 5em;
+  padding-right: 5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5em;
+  list-style: none;
+}
+
+
+
+/*flavor grid and styles - completed for wide screen*/
+#flavor-shop {
+  text-align: center;
+}
+
+#flavor-shop img {
+  max-height: 18em;
+  border-radius: 0.5em 0.5em 0 0;
+}
+
+
+.dough-selection article {
+  background-color: rgb(245, 245, 245);
+  border-radius: 0.5em;
+  text-align: center;
+}
+
+.dough-selection {
+  display: grid;
+  margin-top: 1em;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1em;
+}
+
+
+
+/*footer style - completed*/
+footer {
+  background-color: rgb(245, 245, 245);
+  text-align: center;
+}
+
+
+
+
+
+/*start of media sizing for small screens and labtops*/
+@media (min-width:1024px){
+
+}
+
+
+
+/*start of media sizing for ipad and tablets*/
+@media (min-width:768px){
+
+}
+
+
+/*start of media sizing for mobile devices*/
+@media (min-width:480px){
+
+}
+
+
+
+#limited-edition img {
+  padding: 0.5em;
+  max-height: 15em;
+  border-radius: 1em;
+}
+
+#limited-edition {
+  display: grid;
+}
+
+.image-1 {
+  grid-row: 1/3;
+}
