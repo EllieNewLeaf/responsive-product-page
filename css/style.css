@@ -75,7 +75,7 @@ header {
 h1 {
   font-size: var( --font-size-xl);
   font-weight: 50;
-  margin-top: 0;
+  margin: 0 auto;
 }
 
 h2 {
@@ -141,6 +141,10 @@ nav ul li a:focus {
 }
 
 
+.uppercase {
+  margin: 0 auto;
+}
+
 
 /*review section for wide screen - complete*/
 #reviews {
@@ -177,6 +181,7 @@ nav ul li a:focus {
 
 .dough-selection article {
   background-color: rgb(245, 245, 245);
+  max-width: 290px;
   border-radius: 0.5em;
   text-align: center;
 }
@@ -255,16 +260,21 @@ footer {
     border-radius: 0.5em;
   }
   
+  .image-grid div {
+      border-radius: 0.5em;
+      text-align: center;
+    }
+
   .image-grid {
-    padding-bottom: 2em;
+    padding-bottom: 1em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-  }
-  
-  .image-grid {
-    grid-column: 1/4;
     gap: 1em;
-  } 
+   }
+
+  .image-grid #item-to-span {
+    grid-column: 1 / 4;
+  }
 
   /*about info vertical*/
   #about-us .paragraph-info {
@@ -289,8 +299,8 @@ footer {
 /*bottom pictures*/
   .dough-selection {
     display: grid;
-    margin-left: auto;
     padding-right: 0;
+    margin-left: auto;
     margin-top: 1em;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
